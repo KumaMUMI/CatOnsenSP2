@@ -1,4 +1,4 @@
-package com.example.catonsensp2.Security.jwt;
+package com.example.catonsensp2.security.jwt;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

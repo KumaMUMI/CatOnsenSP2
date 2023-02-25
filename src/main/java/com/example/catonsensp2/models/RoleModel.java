@@ -1,4 +1,4 @@
-package com.example.catonsensp2.Models;
+package com.example.catonsensp2.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,4 +20,6 @@ public class RoleModel implements Serializable {
     @Column(length = 20)
     private ERole name;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private UserModel user;
 }

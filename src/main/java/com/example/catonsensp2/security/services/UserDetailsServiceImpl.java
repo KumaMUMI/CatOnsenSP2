@@ -1,7 +1,7 @@
-package com.example.catonsensp2.Security.services;
+package com.example.catonsensp2.security.services;
 
-import com.example.catonsensp2.Models.UserModel;
-import com.example.catonsensp2.Repositories.UserRepository;
+import com.example.catonsensp2.models.UserModel;
+import com.example.catonsensp2.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,6 +1,6 @@
-package com.example.catonsensp2.Security.jwt;
+package com.example.catonsensp2.security.jwt;
 
-import com.example.catonsensp2.Security.services.UserDetailsServiceImpl;
+import com.example.catonsensp2.security.services.UserDetailsServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,16 +1,17 @@
-package com.example.catonsensp2.Controllers;
+package com.example.catonsensp2.controllers;
 
-import com.example.catonsensp2.Models.ERole;
-import com.example.catonsensp2.Models.RoleModel;
-import com.example.catonsensp2.Models.UserModel;
-import com.example.catonsensp2.Repositories.RoleRepository;
-import com.example.catonsensp2.Repositories.UserRepository;
-import com.example.catonsensp2.Security.jwt.JwtUtils;
-import com.example.catonsensp2.Security.services.UserDetailsImpl;
+
+import com.example.catonsensp2.models.ERole;
+import com.example.catonsensp2.models.RoleModel;
+import com.example.catonsensp2.models.UserModel;
+import com.example.catonsensp2.payload.response.UserInfoResponse;
+import com.example.catonsensp2.repositories.RoleRepository;
+import com.example.catonsensp2.repositories.UserRepository;
+import com.example.catonsensp2.security.jwt.JwtUtils;
+import com.example.catonsensp2.security.services.UserDetailsImpl;
 import com.example.catonsensp2.payload.request.LoginRequest;
 import com.example.catonsensp2.payload.request.SignupRequest;
 import com.example.catonsensp2.payload.response.MessageResponse;
-import com.example.catonsensp2.payload.response.UserInfoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseCookie;

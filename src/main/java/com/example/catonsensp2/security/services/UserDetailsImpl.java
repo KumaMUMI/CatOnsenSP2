@@ -1,6 +1,6 @@
-package com.example.catonsensp2.Security.services;
+package com.example.catonsensp2.security.services;
 
-import com.example.catonsensp2.Models.UserModel;
+import com.example.catonsensp2.models.UserModel;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

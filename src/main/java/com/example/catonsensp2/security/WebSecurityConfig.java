@@ -1,8 +1,8 @@
-package com.example.catonsensp2.Security;
+package com.example.catonsensp2.security;
 
-import com.example.catonsensp2.Security.jwt.AuthEntryPointJwt;
-import com.example.catonsensp2.Security.jwt.AuthTokenFilter;
-import com.example.catonsensp2.Security.services.UserDetailsServiceImpl;
+import com.example.catonsensp2.security.jwt.AuthEntryPointJwt;
+import com.example.catonsensp2.security.jwt.AuthTokenFilter;
+import com.example.catonsensp2.security.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
