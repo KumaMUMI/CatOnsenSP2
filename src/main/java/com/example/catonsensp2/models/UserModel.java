@@ -9,6 +9,9 @@ import javax.persistence.*;
 <<<<<<< HEAD
 =======
 import java.io.Serializable;
+<<<<<<< HEAD
+>>>>>>> parent of 6b3f4a9 (27/02/66:19.34)
+=======
 >>>>>>> parent of 6b3f4a9 (27/02/66:19.34)
 
 @Entity
@@ -25,6 +28,7 @@ public class UserModel {
     private String username;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Column(nullable = false)
     private String password;
 
@@ -33,6 +37,8 @@ public class UserModel {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
 =======
+=======
+>>>>>>> parent of 6b3f4a9 (27/02/66:19.34)
     @Column(name = "Tel",length = 10,nullable = false)
     private String password;
 
