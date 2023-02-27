@@ -30,7 +30,4 @@ public class MassageAppointModel implements Serializable {
     @Column(name = "paymentImage",nullable = false)
     private String massageImage;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private UserModel user;
-
 }

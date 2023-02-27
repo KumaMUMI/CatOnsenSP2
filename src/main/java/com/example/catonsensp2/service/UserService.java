@@ -1,6 +1,8 @@
 package com.example.catonsensp2.service;
 
 import com.example.catonsensp2.models.UserModel;
+import com.example.catonsensp2.repositories.MassageAppointRepository;
+import com.example.catonsensp2.repositories.OnsenAppointRepository;
 import com.example.catonsensp2.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,20 +28,22 @@ public class UserService {
         return this.userRepository.findById(id);
     }
 
-    public List<UserModel> findUserByName(String name){
-        List<UserModel> userList = userRepository.findByName(name);
-        return userList;
-    }
+//    public List<UserModel> findUserByName(String name){
+//        List<UserModel> userList = userRepository.findByName(name);
+//        return userList;
+//    }
+//
+//    public List<UserModel> findUserByPassword(String tel){
+//        List<UserModel> userList = userRepository.findByPassword(tel);
+//        return userList;
+//    }
+//
+//    public List<UserModel> findUserByUserName(String email){
+//        List<UserModel> userList = userRepository.findByUserName(email);
+//        return userList;
+//    }
 
-    public List<UserModel> findUserByTel(String tel){
-        List<UserModel> userList = userRepository.findByTel(tel);
-        return userList;
-    }
 
-    public List<UserModel> findUserByEmail(String email){
-        List<UserModel> userList = userRepository.findByEmail(email);
-        return userList;
-    }
 
     public UserModel saveUser(UserModel user){
         return this.userRepository.save(user);

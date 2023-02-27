@@ -15,4 +15,6 @@ public interface MassageAppointRepository extends JpaRepository<MassageAppointMo
     Optional<MassageAppointModel> findById(Long aLong);
 
     List<MassageAppointModel> findMassageAppointByDate(Date date);
+
+
 }
