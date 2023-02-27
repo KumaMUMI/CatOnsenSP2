@@ -1,9 +1,15 @@
 package com.example.catonsensp2.Models;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+<<<<<<< HEAD
+=======
+import java.io.Serializable;
+>>>>>>> parent of 6b3f4a9 (27/02/66:19.34)
 
 @Entity
 @Table(name = "Customer")
@@ -18,6 +24,7 @@ public class UserModel {
     @Column(nullable = false)
     private String username;
 
+<<<<<<< HEAD
     @Column(nullable = false)
     private String password;
 
@@ -25,6 +32,20 @@ public class UserModel {
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
+=======
+    @Column(name = "Tel",length = 10,nullable = false)
+    private String password;
+
+    @Column(name = "Name",nullable = false)
+    private String name;
+    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+    private OnsenAppointModel onsenAppoint;
+
+    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+    private MassageAppointModel massageAppoint;
+
+    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+>>>>>>> parent of 6b3f4a9 (27/02/66:19.34)
     private RoleModel roles;
 
     public UserModel(String username, String password) {

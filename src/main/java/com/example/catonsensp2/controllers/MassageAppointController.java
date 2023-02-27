@@ -1,7 +1,6 @@
 package com.example.catonsensp2.controllers;
 
 import com.example.catonsensp2.models.MassageAppointModel;
-import com.example.catonsensp2.models.UserModel;
 import com.example.catonsensp2.service.MassageAppointService;
 import com.example.catonsensp2.service.MassageImageService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,12 +45,12 @@ public class MassageAppointController {
         return new ResponseEntity<>(this.massageAppointService.findAllMassageAppoint(),HttpStatus.OK);
     }
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
     public @ResponseBody ResponseEntity<Optional<MassageAppointModel>> getOneMassageAppoint(@PathVariable Long id){
         return new ResponseEntity<>(this.massageAppointService.findMassageAppointByID(id),HttpStatus.OK);
     }
 
-    @PostMapping("{id}")
+    @PostMapping("")
     public @ResponseBody ResponseEntity<MassageAppointModel> postMassageAppoint(@RequestParam("image") MultipartFile file, @RequestPart("massage") String massageAppointJson) throws IOException {
         try {
             MassageAppointModel massage = objectMapper.readValue(massageAppointJson, MassageAppointModel.class);
